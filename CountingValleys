@@ -1,0 +1,15 @@
+public class countingValleys(int n,String s){
+int valleyCounter=0,altitude=0;
+for(int i=0;i<n;i++){
+char ch=s.charAt(i);
+if(ch=='U'){
+altitude++;
+if(altitude==0){
+valleyCounter++;
+}
+else{
+altitude--;
+}
+}
+return valleyCounter;
+}
